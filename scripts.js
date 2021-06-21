@@ -1,5 +1,5 @@
 function adicionarTime() {
-    var campoFilmeFavorito = document.querySelector('#time').value
+    var campoFilmeFavorito = document.querySelector('#time').value.toUpperCase()
     listarFilmesNaTela(times(campoFilmeFavorito))
 }
 
