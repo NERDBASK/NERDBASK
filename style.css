@@ -36,6 +36,9 @@ body {
   
   #listaFilmes img {
     margin: 10px;
+    width: 40px;
+    top: 10px;
+    right:10px;
   }
   
   .form-wrapper {
@@ -57,7 +60,7 @@ body {
     font-size: 16px;
     borde-radius: 4px;
     margin-top: 20px;
-    cursor: pointer;
+    cursor: pointer;  
     transition: .3s;
   }
   
