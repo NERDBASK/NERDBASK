@@ -6,7 +6,7 @@ function adicionarTime() {
 function listarFilmesNaTela(url) {
     var listaFilmes = document.querySelector('#listaFilmes')
     var elementoFilme = "<img src=" + url + ">"
-    listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilme
+    listaFilmes.innerHTML = elementoFilme
 }
 
 function times(time){
