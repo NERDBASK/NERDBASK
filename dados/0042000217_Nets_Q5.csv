@@ -1,0 +1,7 @@
+,personId,firstName,familyName,nameI,playerSlug,position,comment,jerseyNum,statistics.minutes,statistics.fieldGoalsMade,statistics.fieldGoalsAttempted,statistics.fieldGoalsPercentage,statistics.threePointersMade,statistics.threePointersAttempted,statistics.threePointersPercentage,statistics.freeThrowsMade,statistics.freeThrowsAttempted,statistics.freeThrowsPercentage,statistics.reboundsOffensive,statistics.reboundsDefensive,statistics.reboundsTotal,statistics.assists,statistics.steals,statistics.blocks,statistics.turnovers,statistics.foulsPersonal,statistics.points,statistics.plusMinusPoints
+0,201142,Kevin,Durant,K. Durant,kevin-durant,F,,,5:00,0,6,0.0,0,1,0.0,0,0,0.0,0,1,1,0,0,0,0,0,0,-4.0
+1,203925,Joe,Harris,J. Harris,joe-harris,F,,,5:00,0,2,0.0,0,2,0.0,0,0,0.0,1,1,2,0,0,0,0,0,0,-4.0
+2,201933,Blake,Griffin,B. Griffin,blake-griffin,C,,,3:35,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,0,2.0
+3,1628971,Bruce,Brown,B. Brown,bruce-brown,G,,,5:00,1,1,1.0,0,0,0.0,0,0,0.0,2,0,2,0,1,0,0,0,2,-4.0
+4,201935,James,Harden,J. Harden,james-harden,G,,,5:00,0,2,0.0,0,2,0.0,0,0,0.0,0,2,2,0,0,0,0,1,0,-4.0
+5,201145,Jeff,Green,J. Green,jeff-green,,,,1:25,0,0,0.0,0,0,0.0,0,0,0.0,1,0,1,0,0,0,0,0,0,-6.0
