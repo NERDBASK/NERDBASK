@@ -50,14 +50,20 @@ def jogo_por_Q(GameID, startPeriod, endPeriod):
   except OSError:
     pass
 
-  pd.json_normalize(y['boxScoreTraditional']['homeTeam']['players']).to_csv(f'dados/{nome_pasta_jogo}/{gameId}_{name_homeTeam}_{num_Q}.csv')
-  pd.json_normalize(y['boxScoreTraditional']['awayTeam']['players']).to_csv(f'dados/{nome_pasta_jogo}/{gameId}_{name_awayTeam}_{num_Q}.csv')
+
+  df_players_homeTeam = pd.json_normalize(y['boxScoreTraditional']['homeTeam']['players'])
+  df_players_homeTeam['teamName'] = name_homeTeam
+  df_players_awayTeam = pd.json_normalize(y['boxScoreTraditional']['awayTeam']['players'])
+  df_players_awayTeam['teamName'] = name_awayTeam
+
+  df_players = df_players_awayTeam.append(df_players_homeTeam)
+  df_players.to_csv(f'dados/{nome_pasta_jogo}/{gameId}_players_{num_Q}.csv', index=False)
 
   df_awayTeam_statistics = pd.json_normalize(y['boxScoreTraditional']['awayTeam']['statistics'])
   df_homeTeam_statistics = pd.json_normalize(y['boxScoreTraditional']['homeTeam']['statistics'])
   df_game_statistics = df_homeTeam_statistics.append(df_awayTeam_statistics)
   df_game_statistics.index = [name_homeTeam, name_awayTeam]
-  df_game_statistics.to_csv(f'dados/{nome_pasta_jogo}/{gameId}_game_statistics_{num_Q}.csv')
+  df_game_statistics.to_csv(f'dados/{nome_pasta_jogo}/{gameId}_game_statistics_{num_Q}.csv', index=False)
 
 _, GameID, startPeriod, endPeriod = sys.argv
 
