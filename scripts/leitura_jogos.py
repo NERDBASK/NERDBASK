@@ -25,7 +25,6 @@ def jogo_todos_q(GameID):
 
 	status_code = 200
 	df_players_all = pd.DataFrame()
-	df_game_statistics_all = pd.DataFrame()
 	Q = 1
 	nome_pasta_jogo, gameId = '', ''
 	rangeType = '1'
@@ -65,15 +64,6 @@ def jogo_todos_q(GameID):
 			df_players['Q'] = Q
 			df_players_all = df_players_all.append(df_players)
 
-			df_awayTeam_statistics = pd.json_normalize(y['boxScoreTraditional']['awayTeam']['statistics'])
-			df_awayTeam_statistics['teamName'] = name_awayTeam
-			df_homeTeam_statistics = pd.json_normalize(y['boxScoreTraditional']['homeTeam']['statistics'])
-			df_homeTeam_statistics['teamName'] = name_homeTeam
-			df_game_statistics = df_homeTeam_statistics.append(df_awayTeam_statistics)
-			
-			df_game_statistics['Q'] = Q			
-			df_game_statistics_all = df_game_statistics_all.append(df_game_statistics)
-
 		Q += 1
 
 	try:
@@ -82,7 +72,6 @@ def jogo_todos_q(GameID):
 		pass
 
 	df_players_all.to_csv(f'dados/{nome_pasta_jogo}/{gameId}_players_statistics.csv', index=False)
-	df_game_statistics_all.to_csv(f'dados/{nome_pasta_jogo}/{gameId}_team_statistics.csv', index=False)
 
 _, GameID = sys.argv
 
