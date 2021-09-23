@@ -1,0 +1,48 @@
+
+Win:
+ 
+Jazz      win 52
+Boston    win 36
+Wizards   win 34
+Rockets   win 17
+
+*********************
+
+Defensive Status 
+ 
+
+*********************
+
+Rebound:
+
+Jazz     3474 
+Oklahoma 3283  
+Portland 3207 
+Nets     3199 
+ 
+*********************
+
+Steal:
+
+Oklahoma 504 
+Portland 496
+Nets     484 
+Jazz     474
+
+*********************
+
+Block:
+
+Nets     379 
+Jazz     371
+Portland 363
+Oklahoma 316
+
+*********************
+
+Personal Fault:
+
+Nets     1371 
+Portland 1362
+Jazz     1335
+Oklahoma 1305 

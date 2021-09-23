@@ -1,0 +1,45 @@
+
+Win:
+ 
+Jazz      win 52
+Boston    win 36
+Wizards   win 34
+Rockets   win 17
+
+*********************
+
+Ofensive Status 
+
+3 Point:
+
+Nets     39.2%  
+Jazz     38.9%  
+Portland 38.5%   
+Oklahoma 33.9%
+
+*********************
+
+Assistance:
+
+Nets      1929
+Jazz      1703
+Oklahoma  1588 
+Portland  1531
+ 
+*********************
+
+Free Throw:
+
+Portland  82.3%
+Nets      80.4%
+Jazz      79.9%
+Oklahoma  72.5%
+
+*********************
+
+Turn over:
+ 
+Oklahoma 1162  
+Jazz     1023  
+Nets     975   
+Portland 799  
